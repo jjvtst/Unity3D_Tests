@@ -54,6 +54,9 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -68,6 +71,9 @@
     </Reference>
     <Reference Include="UnityEditor.Networking">
       <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
@@ -108,8 +114,14 @@
     <Reference Include="UnityEditor.Networking">
       <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
@@ -126,26 +138,26 @@
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
-    <Reference Include="I18N.MidEast">
-      <HintPath>Assets\Plugins\I18N.MidEast.dll</HintPath>
+    <Reference Include="I18N.CJK">
+      <HintPath>Assets\Plugins\I18N.CJK.dll</HintPath>
     </Reference>
     <Reference Include="I18N">
       <HintPath>Assets\Plugins\I18N.dll</HintPath>
     </Reference>
-    <Reference Include="I18N.West">
-      <HintPath>Assets\Plugins\I18N.West.dll</HintPath>
+    <Reference Include="I18N.MidEast">
+      <HintPath>Assets\Plugins\I18N.MidEast.dll</HintPath>
     </Reference>
-    <Reference Include="I18N.CJK">
-      <HintPath>Assets\Plugins\I18N.CJK.dll</HintPath>
-    </Reference>
-    <Reference Include="Ionic.Zip.Reduced">
-      <HintPath>Assets\Plugins\Ionic.Zip.Reduced.dll</HintPath>
+    <Reference Include="I18N.Other">
+      <HintPath>Assets\Plugins\I18N.Other.dll</HintPath>
     </Reference>
     <Reference Include="I18N.Rare">
       <HintPath>Assets\Plugins\I18N.Rare.dll</HintPath>
     </Reference>
-    <Reference Include="I18N.Other">
-      <HintPath>Assets\Plugins\I18N.Other.dll</HintPath>
+    <Reference Include="I18N.West">
+      <HintPath>Assets\Plugins\I18N.West.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced">
+      <HintPath>Assets\Plugins\Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
