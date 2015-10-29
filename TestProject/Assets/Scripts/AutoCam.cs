@@ -4,7 +4,9 @@ using System.Collections;
 public class AutoCam : MonoBehaviour {
 
 	// ================================================================
+	//
 	//				AbstractTargetFollower
+	//
 	// ================================================================
 
 	public enum UpdateType // The available methods of updating are:
@@ -15,9 +17,9 @@ public class AutoCam : MonoBehaviour {
 	}
 
 
-	public Transform m_Target;            // The target object to follow
-	public bool m_AutoTargetPlayer = true;  // Whether the rig should automatically target the player.
-	public UpdateType m_UpdateType;         // stores the selected update type
+	public Transform m_Target;									// The target object to follow
+	public bool m_AutoTargetPlayer = true;						// Whether the rig should automatically target the player.
+	public UpdateType m_UpdateType = UpdateType.FixedUpdate;	// stores the selected update type
 
 	protected Rigidbody targetRigidbody;
 
@@ -57,9 +59,14 @@ public class AutoCam : MonoBehaviour {
 
 
 	// ----------------------------------------------------------------
-
 	void Awake()
 	{
+		// default to something...
+		m_LastFlatAngle = 0;
+		m_CurrentTurnAmount = 0;
+		m_TurnSpeedVelocityChange = 0;
+
+
 		// find the camera in the object hierarchy
 		m_Cam = GetComponentInChildren<Camera>().transform;
 		m_Pivot = m_Cam.parent;

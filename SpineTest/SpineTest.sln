@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpineTest.CSharp", "SpineTest.CSharp.csproj", "{9AA84F2C-44DC-7E8A-E730-C920DD82E9A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpineTest.CSharp.Editor", "SpineTest.CSharp.Editor.csproj", "{C32C28ED-5B40-89E0-9884-0BA3016F2FA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AA84F2C-44DC-7E8A-E730-C920DD82E9A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AA84F2C-44DC-7E8A-E730-C920DD82E9A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AA84F2C-44DC-7E8A-E730-C920DD82E9A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AA84F2C-44DC-7E8A-E730-C920DD82E9A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C32C28ED-5B40-89E0-9884-0BA3016F2FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C32C28ED-5B40-89E0-9884-0BA3016F2FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C32C28ED-5B40-89E0-9884-0BA3016F2FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C32C28ED-5B40-89E0-9884-0BA3016F2FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
