@@ -25,7 +25,8 @@ public class RobotControllerScript : MonoBehaviour {
 
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
 		anim = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
 	}
@@ -64,8 +65,8 @@ public class RobotControllerScript : MonoBehaviour {
 
 	void Update()
 	{
-		if((grounded || !doubleJump) && Input.GetButtonDown("Jump") )
-		//if( grounded && Input.GetButtonDown( "Jump" ) )
+		//if((grounded || !doubleJump) && Input.GetButtonDown("Jump") )
+		if( grounded && Input.GetButtonDown( "Jump" ) )
 		{
 			anim.SetBool( "Ground", false );
 			rb.AddForce( new Vector2( 0, jumpForce ) );

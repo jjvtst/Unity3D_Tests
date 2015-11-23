@@ -29,6 +29,7 @@ public class FootSoldierExample : MonoBehaviour {
 	[Range(0, 0.2f)]
 	public float blinkDuration = 0.05f;
 
+	[Range( 0, 10 )]
 	public float moveSpeed = 3;
 
 	private SkeletonAnimation skeletonAnimation;
@@ -36,7 +37,7 @@ public class FootSoldierExample : MonoBehaviour {
 	void Awake() {
 		skeletonAnimation = GetComponent<SkeletonAnimation>();
 		skeletonAnimation.OnReset += Apply;
-	}
+    }
 
 	void Apply(SkeletonRenderer skeletonRenderer) {
 		StartCoroutine("Blink");
@@ -48,8 +49,8 @@ public class FootSoldierExample : MonoBehaviour {
 		} else {
 			if (Input.GetKey(KeyCode.RightArrow)) {
 				skeletonAnimation.AnimationName = moveAnimation;
-				skeletonAnimation.skeleton.FlipX = false;
-				transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
+                skeletonAnimation.skeleton.FlipX = false;
+                transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
 			} else if(Input.GetKey(KeyCode.LeftArrow)) {
 				skeletonAnimation.AnimationName = moveAnimation;
 				skeletonAnimation.skeleton.FlipX = true;

@@ -153,6 +153,7 @@
     <None Include="Assets\_Spine\Examples\Spine\Raggedy Spineboy\Raggedy Spineboy.atlas.txt" />
     <None Include="Assets\_Spine\Examples\Spine\Raptor\raptor.atlas.txt" />
     <None Include="Assets\_Spine\Examples\Spine\Spineboy\spineboy.atlas.txt" />
+    <None Include="Assets\_Spine\Examples\Spine\SpineboyJJV\spineboy_jjv.atlas.txt" />
     <None Include="Assets\_Spine\spine-unity\Ghost\Shaders\SkeletonGhost.shader" />
     <None Include="Assets\_Spine\spine-unity\Shaders\Bones.shader" />
     <None Include="Assets\_Spine\spine-unity\Shaders\HiddenPass.shader" />

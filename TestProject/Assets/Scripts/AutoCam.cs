@@ -19,9 +19,14 @@ public class AutoCam : MonoBehaviour {
 
 	public Transform m_Target;									// The target object to follow
 	public bool m_AutoTargetPlayer = true;						// Whether the rig should automatically target the player.
-	public UpdateType m_UpdateType = UpdateType.FixedUpdate;	// stores the selected update type
+	public UpdateType m_UpdateType = UpdateType.FixedUpdate;    // stores the selected update type
+
+
+	public float m_TargetPercOffsetX = 0.0f;
+	public float m_TargetPercOffsetY = 0.0f;
 
 	protected Rigidbody targetRigidbody;
+
 
 	// ================================================================
 	//				PivotBasedCameraRig
