@@ -15,8 +15,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4714ee4454de4c747b92f8fbaf14dfc1, type: 2}
   skeletonJSON: {fileID: 4900000, guid: 4b3265c3bbe5d094bbb899c615632f49, type: 3}
   scale: .00999999978
-  fromAnimation: []
-  toAnimation: []
-  duration: []
+  fromAnimation:
+  - idle
+  - walk
+  toAnimation:
+  - idle
+  - shoot
+  duration:
+  - 0
+  - 0
   defaultMix: .200000003
   controller: {fileID: 9100000, guid: 066e413e1907601499726e2babf8b92e, type: 2}

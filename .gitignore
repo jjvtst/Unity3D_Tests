@@ -5,6 +5,7 @@
 [Oo]bj/
 [Bb]uild
 [Ll]ibrary/
+[Bb]in/
 sysinfo.txt
 *.stackdump
  
@@ -37,3 +38,4 @@ ehthumbs.db
 # Unity3D generated meta files
 # ===================================== #
 *.pidb.meta
+/TestProject/Bin
