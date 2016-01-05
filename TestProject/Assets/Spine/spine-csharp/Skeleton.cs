@@ -94,6 +94,7 @@ namespace Spine {
 				ikConstraints.Add(new IkConstraint(ikConstraintData, this));
 
 			UpdateCache();
+			UpdateWorldTransform();
 		}
 
 		/// <summary>Caches information about bones and IK constraints. Must be called if bones or IK constraints are added or
@@ -133,7 +134,7 @@ namespace Spine {
 					current = current.parent;
 				} while (current != null);
 				nonIkBones.Add(bone);
-				outer: {}
+			outer: { }
 			}
 		}
 
@@ -181,7 +182,7 @@ namespace Spine {
 			drawOrder.Clear();
 			for (int i = 0, n = slots.Count; i < n; i++)
 				drawOrder.Add(slots.Items[i]);
-			
+
 			for (int i = 0, n = slots.Count; i < n; i++)
 				slots.Items[i].SetToSetupPose(i);
 		}

@@ -40,14 +40,8 @@ public class Spineboy : MonoBehaviour {
 	public void Start () {
 		// Get the SkeletonAnimation component for the GameObject this script is attached to.
 		skeletonAnimation = GetComponent<SkeletonAnimation>();
-
 		// Call our method any time an animation fires an event.
-		//skeletonAnimation.state.Event += Event;
-		skeletonAnimation.state.Event += (state, trackIndex, e ) => {
-			Debug.Log( trackIndex + " " + state.GetCurrent( trackIndex ) + ": event " + e.Data.Name + ", " + e.Int );
-		};
-
-
+		skeletonAnimation.state.Event += Event;
 		// A lambda can be used for the callback instead of a method.
 		skeletonAnimation.state.End += (state, trackIndex) => {
 			Debug.Log("start: " + state.GetCurrent(trackIndex));
@@ -59,18 +53,13 @@ public class Spineboy : MonoBehaviour {
 	}
 	
 	public void Event (Spine.AnimationState state, int trackIndex, Spine.Event e) {
-		Debug.Log(trackIndex + " " + state.GetCurrent(trackIndex) + ": event " + e.Data.Name + ", " + e.Int);
+		Debug.Log(trackIndex + " " + state.GetCurrent(trackIndex) + ": event " + e + ", " + e.Int);
 	}
 
 	public void OnMouseDown () {
 		// Set jump to be played on track 0 immediately.
-		skeletonAnimation.state.SetAnimation( 0, "jump", false);
-		skeletonAnimation.state.AddAnimation( 1, "shoot", true, 0 );
+		skeletonAnimation.state.SetAnimation(0, "jump", false);
 		// Queue walk to be looped on track 0 after the jump animation.
 		skeletonAnimation.state.AddAnimation(0, "run", true, 0);
-	}
-	public void OnMouseUp()
-	{
-		skeletonAnimation.state.SetAnimation( 1, "shoot", false );
 	}
 }
